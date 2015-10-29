@@ -55,4 +55,18 @@ Template.sample.helpers({
 #Overwriting styles
 Due to react for the most part using inline styles if you want to override the styles of the component you must pass
 a valid JavaScript style object into the component. Such as:
-`{{> React component=location done=done styles=myStyleObject}}`
+```
+{{> React component=location done=done styles=myStyleObject}}
+```
+and in a helper you should return a valid styles object such as
+```
+myStyleObject(){
+  return {
+    span: { float: 'right', width: '80%', },
+    icon: { float: 'left', width: '40px', height: '40px', lineHeight: '60px', },
+    input: { marginTop: '30px', width: 'calc(100% - 30px)', padding: '15px', height: '50px', },
+    ul: { listStyleType: 'none', margin: '0', padding: '15px 0 0 0', width: '100%', position: 'absolute', zIndex: '10', backgroundColor: 'white'},
+    li: { width: '100%', padding: '15px', height: '80px', fontSize: '14px', },
+  };
+}
+```
