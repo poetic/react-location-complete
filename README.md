@@ -36,7 +36,7 @@ In a js file
 ```
 let location;
 
-System.import('/client/lib/test-import').then(function(module){
+System.import('/path/to/your/component').then(function(module){
   location = module.default();
 });
 
