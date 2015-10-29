@@ -110,7 +110,7 @@ let geoError = () => {
     navigator.notification.alert(
         msg,
         function (){},
-        'FPN',
+        'RLC',
         'Dismiss'
     );
   } else {
