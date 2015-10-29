@@ -26,7 +26,7 @@ export default function(){
 In your template:
 ```
 <template name="sample">
-  <div style='width: 90%'>
+  <div>
     {{> React component=location done=done}}
   </div>
 </template>
